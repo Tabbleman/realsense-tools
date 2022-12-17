@@ -8,7 +8,7 @@ using namespace std;
 
 
 int main(int argc, char **argv) {
-    int n = 100;
+    int n = 3000;
     if(argc != 2){
         cerr << "usage: recorder PATH_TO_FOLDER\n";
         
@@ -59,7 +59,7 @@ int main(int argc, char **argv) {
     
     
     
-    while(n--){
+    while(n --){
         
          size_t now = std::chrono::duration_cast<std::chrono::milliseconds>(std::chrono::system_clock::now().time_since_epoch()).count();
          string     depth_image_name, 
